@@ -1,0 +1,10 @@
+This script is intended as a startup init script.
+
+It will lock up usbdevices at bootup by passing the
+value "1" to /sys/bus/usb/devices/usb?/authorized_default.
+
+After locking up usbdevice mapping it may be reopened by 
+writing certain udev rules to whitelist allowed devices
+afterwards as i describe in my weblog and also described 
+in this $(article).
+
